@@ -8,7 +8,7 @@
 | [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
 | [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 백준 실버이상 3문제 자바로 풀기 |
 | [이채영(cycy929)](https://github.com/cycy929) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
-| [최재필(wovlf)](https://github.com/wovlf) | 알고리즘 유형별 노션 정리 + 관련 문제 풀이 수업 내용 정리 + 데일리 과제 복습 + 백준 골드 ~ 플레티넘 1솔 중 하루에 한가지 이상 하기 (2/1 시작) |
+| [최재필(wovlf)](https://github.com/wovlf) | 알고리즘 유형별 노션 정리 + 관련 문제 풀이 수업 내용 정리 + 데일리 과제 복습 + 백준 골드 ~ 플레티넘 1솔 중 하루에 한가지 이상 하기 |
 | [동현진(bronzing3412)](https://github.com/bronzing3412) | 백준 5문제 이상 풀기 |
 | [박경찬(chomuG)](https://github.com/chomuG) | 매일 백준 골드 이상급 알고리즘 1문제 이상 풀기 |
 | [송진우(openSongce)](https://github.com/openSongce) | 백준 기초부터 3문제씩 자바로 풀기 |
