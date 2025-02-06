@@ -4,14 +4,15 @@
 | --- | --- |
 | [김수진(kim429)](https://github.com/kim429) | 백준 5문제 이상 풀기 |
 | [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | AtCoder Beginner Contest 기출 문제 중 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/) 기준 Difficulty 400 ~ 800 사이의 2문제 Upsolving 하기 |
-| [오승연(syeony)](https://github.com/syeony) | 2/2 부터 시작 |
-| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 (1/31 ~ 2/1 이후) |
-| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 백준 실버이상 3문제 자바로 풀기 (설 연휴 이후) |
-| [이채영(cycy929)](https://github.com/cycy929) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 (설 연휴 이후) |
+| [오승연(syeony)](https://github.com/syeony) | (목표 추가) |
+| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
+| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 백준 실버이상 3문제 자바로 풀기 |
+| [이채영(cycy929)](https://github.com/cycy929) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
 | [최재필(wovlf)](https://github.com/wovlf) | 알고리즘 유형별 노션 정리 + 관련 문제 풀이 수업 내용 정리 + 데일리 과제 복습 + 백준 골드 ~ 플레티넘 1솔 중 하루에 한가지 이상 하기 (2/1 시작) |
-| [동현진(bronzing3412)](https://github.com/bronzing3412) | 백준 5문제 이상 풀기 (설 연휴 이후) |
-| [박경찬(chomuG)](https://github.com/chomuG) | 매일 백준 골드 이상급 알고리즘 1문제 이상 풀기 (설 연휴 이후) |
-| [송진우(openSongce)](https://github.com/openSongce) | 백준 기초부터 3문제씩 자바로 풀기 (설 연휴 이후) |
+| [동현진(bronzing3412)](https://github.com/bronzing3412) | 백준 5문제 이상 풀기 |
+| [박경찬(chomuG)](https://github.com/chomuG) | 매일 백준 골드 이상급 알고리즘 1문제 이상 풀기 |
+| [송진우(openSongce)](https://github.com/openSongce) | 백준 기초부터 3문제씩 자바로 풀기 |
+| 홍은솔 (깃허브 아이디 추가) | (목표 추가) |
 
 # ✅ 진행 방식
 
