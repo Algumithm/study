@@ -4,7 +4,7 @@
 | --- | --- |
 | [김수진(kim429)](https://github.com/kim429) | 백준 5문제 이상 풀기 |
 | [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | AtCoder Beginner Contest 기출 문제 중 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/) 기준 Difficulty 400 ~ 800 사이의 2문제 Upsolving 하기 |
-| [오승연(syeony)](https://github.com/syeony) | (목표 추가) |
+| [오승연(syeony)](https://github.com/syeony) | 쉬운 문제더라도 매일 한문제 이상씩 풀기 |
 | [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
 | [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 백준 실버이상 3문제 자바로 풀기 |
 | [이채영(cycy929)](https://github.com/cycy929) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
@@ -12,7 +12,7 @@
 | [동현진(bronzing3412)](https://github.com/bronzing3412) | 백준 5문제 이상 풀기 |
 | [박경찬(chomuG)](https://github.com/chomuG) | 매일 백준 골드 이상급 알고리즘 1문제 이상 풀기 |
 | [송진우(openSongce)](https://github.com/openSongce) | 백준 기초부터 3문제씩 자바로 풀기 |
-| 홍은솔 (깃허브 아이디 추가) | (목표 추가) |
+| [홍은솔(eunsolH)](https://github.com/eunsolH) | 이번주 워크샵, 오픽공부, 자바로 코드트리 novice low단계 공부 |
 
 # ✅ 진행 방식
 
