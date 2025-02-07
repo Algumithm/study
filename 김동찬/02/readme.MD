@@ -12,7 +12,7 @@ AtCoder Problems: 666
 
 # 링크
 
-[https://atcoder.jp/contests/abc385/tasks/abc385_c](https://atcoder.jp/contests/abc384/tasks/abc384_d)
+[https://atcoder.jp/contests/abc384/tasks/abc384_d](https://atcoder.jp/contests/abc384/tasks/abc384_d)
 
 # 접근 과정
 
