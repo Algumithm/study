@@ -1,18 +1,21 @@
-# 🎯 목표
+# 🎯 2월 3주차(2월 12~15일) 목표
 
 |         **아이디** |                          **목표** |
 | --- | --- |
-| [김수진(kim429)](https://github.com/kim429) | 백준 5문제 이상 풀기 |
+| [김수진(kim429)](https://github.com/kim429) | 알고리즘 3문제 이상 풀기 |
 | [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | AtCoder Beginner Contest 기출 문제 중 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/) 기준 Difficulty 400 ~ 800 사이의 2문제 Upsolving 하기 |
-| [오승연(syeony)](https://github.com/syeony) | 쉬운 문제더라도 매일 한문제 이상씩 풀기 |
-| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
-| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 백준 실버이상 3문제 자바로 풀기 |
-| [이채영(cycy929)](https://github.com/cycy929) | 백준 브론즈 ~ 실버 3문제 자바로 풀기 |
-| [최재필(wovlf)](https://github.com/wovlf) | 알고리즘 유형별 노션 정리 + 관련 문제 풀이 수업 내용 정리 + 데일리 과제 복습 + 백준 골드 ~ 플레티넘 1솔 중 하루에 한가지 이상 하기 |
-| [동현진(bronzing3412)](https://github.com/bronzing3412) | 백준 5문제 이상 풀기 |
-| [박경찬(chomuG)](https://github.com/chomuG) | 매일 백준 골드 이상급 알고리즘 1문제 이상 풀기 |
-| [송진우(openSongce)](https://github.com/openSongce) | 백준 기초부터 3문제씩 자바로 풀기 |
-| [홍은솔(eunsolH)](https://github.com/eunsolH) | 이번주 워크샵, 오픽공부, 자바로 코드트리 novice low단계 공부 |
+| [오승연(syeony)](https://github.com/syeony) | 최소 5문제이상 풀기 |
+| [김민(ZeppIine)](https://github.com/ZeppIine) | 3문제 이상 풀기 |
+| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 3문제 이상 풀기 |
+| [이채영(cycy929)](https://github.com/cycy929) | 2차원 격자 문제집 중 2문제 풀기 |
+| [최재필(wovlf)](https://github.com/wovlf) | 내일까지 모의sw역량테스트 올클리어
+화요일부터 b형알고리즘/자료구조 1개씩 개념정리+ 예시문제풀이 ex)red-black-tree노션정리 + 관련 백준문제 풀이
+모든 개념정리는 따로 개인노션으로 진행하여 공개는x
+문제풀이는 자동 깃허브에 등록 |
+| [동현진(bronzing3412)](https://github.com/bronzing3412) | 일주일동안 5문제 이상 풀기 |
+| [박경찬(chomuG)](https://github.com/chomuG) | 최소 3문제이상 풀기 |
+| [송진우(openSongce)](https://github.com/openSongce) | 저도 3문제이상 풀기 |
+| [홍은솔(eunsolH)](https://github.com/eunsolH) | 최소3문제이상풀기 |
 
 # ✅ 진행 방식
 
