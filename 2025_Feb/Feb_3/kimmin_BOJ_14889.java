@@ -1,3 +1,4 @@
+// 시간 초과가 난 순열 코드
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
