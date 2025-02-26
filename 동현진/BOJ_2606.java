@@ -31,9 +31,7 @@ public class Main {
     	visit[index] = true;
     	cnt++;
     	for(int i = 1; i <= V; i++) {
-    		if(com[index][i] == true && visit[i] == false) {
-    			dfs(i, V);
-    		}
+    		if(com[index][i] == true && visit[i] == false) dfs(i, V);
     	}
     }
 }
