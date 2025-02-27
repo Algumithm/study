@@ -68,11 +68,11 @@ Feb_3/BOJ_1234/kim429.md
 
 ```java
 예시)
-BOJ_1244.java
-BOJ_1244.md
+study/kim429/BOJ_1244.java
+study/kim429/BOJ_1244.md
 
-SWEA_3985.java
-SWEA_3985.md
+study/kim429/SWEA_3985.java
+study/kim429/SWEA_3985.md
 
 ```
 
