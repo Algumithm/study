@@ -21,7 +21,7 @@ public class Main {
         			
         	com[a][b] = true;
         	com[b][a] = true;
-        }
+        } 
         dfs(1, V);
         bw.write((cnt-1)+"\n");
         bw.flush();
