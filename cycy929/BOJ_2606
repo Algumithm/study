@@ -1,0 +1,59 @@
+package dfs_bfs;
+
+import java.util.LinkedList;  
+import java.util.Queue;       
+import java.util.Scanner;   
+
+public class Main_2606 {  // 백준 2606 문제: 바이러스, 실버3 레벨
+
+
+    static int n, m;  //n은 컴퓨터의 수, m은 네트워크 연결 수
+    static int[][] arr; // 인접행렬
+    static int[] visited;
+
+    static Queue<Integer> queue;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);  
+        n = sc.nextInt();  // 컴퓨터 수
+        m = sc.nextInt();  // 연결된 쌍의 수 
+        arr = new int[n + 1][n + 1]; 
+        queue = new LinkedList<>();   
+        visited = new int[n + 1];     
+
+        for (int i = 1; i < n + 1; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            arr[a][b] = 1;  
+            arr[b][a] = 1;
+        }
+
+        queue.offer(1);    
+        visited[1] = 1;    
+
+        // BFS
+        while (!queue.isEmpty()) { 
+            int cur = queue.poll();  
+            for (int i = 1; i < n + 1; i++) {  
+                if (arr[cur][i] == 1) {
+                    if (visited[i] == 0) {
+                        visited[i] = 1;  
+                        queue.offer(i);
+                    }
+                }
+            }
+        }
+
+        int computer = 0;
+        for (int i = 1; i <= n; i++) {
+            if (visited[i] == 1) computer++; 
+        }
+
+        computer--;
+
+     
+        System.out.println(computer);
+
+        sc.close();
+    }
+}
