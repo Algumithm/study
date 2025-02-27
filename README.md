@@ -48,12 +48,12 @@
 
 ```
 예시) 2월 2주차 문제를 푼 경우
-`Feb_2/kim429.java
-`Feb_2/kim429.md
+Feb_2/kim429.java
+Feb_2/kim429.md
 
 예시) 공통 문제가 2개인 경우
-`Feb_3/BOJ_1234/kim429.java
-`Feb_3/BOJ_1234/kim429.md
+Feb_3/BOJ_1234/kim429.java
+Feb_3/BOJ_1234/kim429.md
 ```
 
 **2. 주간 목표**
