@@ -30,5 +30,5 @@ public class Main {
             bw.write(max_queue.peek()+"\n");
         }
         bw.close();
-    }
+    } 
 }
