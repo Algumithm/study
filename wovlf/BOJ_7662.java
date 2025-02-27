@@ -32,7 +32,7 @@ public class Main {
 						if(map.get(map.lastKey()) == 0) {
 							map.remove(map.lastKey());
 						}
-					}
+					} 
 				}
 				
 			}
