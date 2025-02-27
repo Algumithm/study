@@ -2,10 +2,10 @@
 
 |         **아이디** |                          **목표** |
 | --- | --- |
-| [김수진(kim429)](https://github.com/kim429) | 알고리즘 3문제 이상 풀기 |
+| [김수진(kim429)](https://github.com/kim429) | 매일 1문제씩 풀기 |
 | [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | AtCoder Beginner Contest 기출 문제 중 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/) 기준 Difficulty 400 ~ 800 사이의 2문제 Upsolving 하기 |
 | [오승연(syeony)](https://github.com/syeony) | 다섯문제 이상 풀기 |
-| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈~실버/ SW D3~D5 3문제이상 풀기 |
+| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버/ SW D3 ~ D5 3문제이상 풀기 |
 | [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 실버이상 3문제 , 골드이상 1문제 풀기 |
 | [이채영(cycy929)](https://github.com/cycy929) | 5문제이상풀기 |
 | [최재필(wovlf)](https://github.com/wovlf) | 내일까지 모의sw역량테스트 올클리어, 화요일부터 b형알고리즘/자료구조 1개씩 개념정리+ 예시문제풀이 ex)red-black-tree노션정리 + 관련 백준문제 풀이 모든 개념정리는 따로 개인노션으로 진행하여 공개는x, 문제풀이는 자동 깃허브에 등록 |
