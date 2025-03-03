@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+class Solution_cook  //(금-토) swea 요리사 - 두 음식 간의 맛의 차이가 최소가 되도록 A음식과 B음식을 만들었을 때 그 차이 값 (스타트와링크와 비슷)
+{
+    static int N;
+    static boolean[] visited;
+    static int map[][];
+    static int result;
+    public static void main(String args[]) throws Exception
+    {
+
+
+        Scanner sc = new Scanner(System.in);
+        int T;
+        T=sc.nextInt();
+
+        for(int test_case = 1; test_case <= T; test_case++)
+        {
+            N = sc.nextInt();
+            map = new int[N+1][N+1];
+            visited = new boolean[N];
+
+            for(int y=1; y<N+1; y++){
+                for(int x=1; x<N+1; x++){
+                    map[y][x] = sc.nextInt();
+                }
+            }
+
+            result = 99999;
+            DFS(0, 0);
+
+            System.out.println("#"+test_case +" "+result);
+
+
+
+
+
+        }
+    }
+
+    static void DFS(int start, int depth){
+        if(depth == N/2){
+            result = Math.min(result, sumDifference());
+            return;
+        }
+
+        for(int i=start; i<N; i++){
+
+            if(visited[i] == false){
+                visited[i] = true;
+                DFS(i+1, depth +1);
+                visited[i] = false;
+
+            }
+
+        }
+    }
+
+    private static int sumDifference() {
+
+        int sumA = 0;
+        int sumB = 0;
+
+        for(int y=1; y<N+1; y++){
+            for(int x=1; x<N+1; x++){
+
+                if(visited[y-1] == true && visited[x-1] == true){
+                    sumA += map[y][x];
+                }
+
+                if(visited[y-1] == false && visited[x-1] == false){
+                    sumB += map[y][x];
+                }
+
+            }
+        }
+
+        return Math.abs(sumA-sumB);
+
+    }
+
+}
