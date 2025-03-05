@@ -76,9 +76,7 @@ public class BJ1 {
 				}
 			}
 		}
-//		for (int i = 0; i < eachHouseSize.size(); i++) {
-//            System.out.println(eachHouseSize.get(i));
-//        }
+
 		
 		System.out.println(eachHouseSize.size());
 		
