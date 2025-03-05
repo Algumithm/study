@@ -1,10 +1,8 @@
-package test;
-
 import java.io.*;
 import java.util.*;
 import java.lang.*;
 
-public class Test {
+public class Main{
 	static int[][] arr;
 	static boolean[][] visited;
 	static int[] dx = {0,0,-1,1};
@@ -33,7 +31,7 @@ public class Test {
 		for(int i = 0; i < n; i++) {
 			for(int j = 0; j < n; j++) {
 				max = 0;
-				if(arr[i][j] > 0 && !visited[i][j]) {
+				if(arr[i][j] > 0) {
 					dfs(j,i,n);
 					list.add(max);
 				}
@@ -59,9 +57,7 @@ public class Test {
 	} // main
 	
 	static void dfs(int x, int y, int n) {
-		if(arr[y][x] > 0) {
 			arr[y][x] = 0;
-			visited[y][x] = true;
 			max++;
 			
 			for(int i = 0; i < 4; i++) {
@@ -72,7 +68,6 @@ public class Test {
 					dfs(nx, ny, n);
 				}
 			}
-		}
 		
 		
 	}
