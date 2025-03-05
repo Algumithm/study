@@ -23,10 +23,12 @@ public class Solution {
 			int total_count = 0;
 			
 			StringTokenizer st = new StringTokenizer(br.readLine());
+			
 			for(int i = 0; i < tree_count; i++) {
 				tree[i] = Integer.parseInt(st.nextToken());
 				max_tree = Math.max(max_tree, tree[i]);
 			}
+			
 			for(int i = 0; i < tree_count; i++) {
 				grow[i] = max_tree - tree[i];
 				total_count += grow[i];
