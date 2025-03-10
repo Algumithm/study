@@ -34,7 +34,7 @@ public class Main {
 		}
 		
 		System.out.println(bfs());
-	}//main
+	}//mainn
 	
 	static int bfs() {
 		int count = 0;
