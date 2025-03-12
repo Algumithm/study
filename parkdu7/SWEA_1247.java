@@ -56,7 +56,7 @@ public class Solution {
 			dfs(company[0], company[1], 0, 0);
 
 			System.out.println("#" + c + " " + min);
-		}//for cs
+		}//cs
 	}//main
 	
 	static void dfs(int x, int y, int d, int cnt) {
