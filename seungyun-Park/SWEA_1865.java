@@ -36,7 +36,6 @@ public class Solution {
 	static void dfs(int idx, double p) {
 
 		if (p <= max) return;
-//		System.out.println("idx : " + idx + ", p : " + p);
 		if(idx == o) {
 			max = Math.max(max, p);
 			return;
@@ -46,8 +45,6 @@ public class Solution {
 			if(!visited[i]) {
 				double per;
 				visited[i] = true;
-//				System.out.println(grid[idx][i] );
-//				System.out.println("grid[idx]["+ i +"] / 100 : " + grid[idx][i] / 100);
 				per = p * (grid[idx][i] / 100.0);
 				dfs(idx + 1, per);
 				visited[i] = false;
