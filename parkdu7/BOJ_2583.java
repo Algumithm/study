@@ -65,7 +65,7 @@ public class bj2583 {
 				dfs(nx, ny);
 			}
 		}
-	}//dfs
+	}//dfss
 	
 	static boolean isEdge(int i, int j) {
         if(i < 0 || i >= N || j < 0 || j >= M) {
