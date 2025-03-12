@@ -44,7 +44,7 @@ public class Solution {
             }
             System.out.println();
         }
-    }
+    }//main
 
     static double binarySearch(double left, double right) {
         while (right - left > 1e-12) { // 부동소수정
@@ -58,7 +58,7 @@ public class Solution {
             }
         }
         return left;
-    }
+    }//binarySearch
 
     static double calculateForce(double pos) {
         double totalForce = 0;
@@ -69,5 +69,5 @@ public class Solution {
         }
 
         return totalForce;
-    }
+    }//calc
 }
