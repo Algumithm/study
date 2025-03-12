@@ -38,7 +38,7 @@ public class Main {
             }
         }
         
-        //궁수 배치 경우의 수만큼 BFS 해서 최댓값 갱신?
+        //궁수 배치 경우의 수만큼 BFS 해서 최댓값 갱신
         for (int i = 0; i < M - 2; i++) {
             dfs(i,0);
         }

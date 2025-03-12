@@ -32,7 +32,7 @@ public class bj2559 {
 		
 		for(int i = K-1; i < N; i++ ) {
 		    if (i == K-1) {
-		        max = stackSum[i]; // 첫 번째 K개의 합
+		        max = stackSum[i]; //첫 번째 K개의 합
 		    } else {
 		        max = Math.max(max, stackSum[i] - stackSum[i-K]);
 		    }

@@ -23,7 +23,7 @@ public class bj1697_bfs {
 
     static int bfs(int start) {
         Queue<int[]> queue = new LinkedList<>();
-        queue.add(new int[]{start, 0}); // 위치, 이동 횟수
+        queue.add(new int[]{start, 0}); // 위치 이동 횟수
         visited[start] = true;
 
         while (!queue.isEmpty()) {

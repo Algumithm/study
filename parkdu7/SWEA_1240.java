@@ -70,7 +70,7 @@ public class Solution {
 			}
 			
 			System.out.println("#" + c + " " + ans);
-		}//case
+		}//cs
 	}//main
 	
 	static int findLastOne(int[] arr) {
