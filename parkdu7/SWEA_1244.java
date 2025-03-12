@@ -60,6 +60,6 @@ public class Solution {
             num = num * 10 + list.get(i);
         }
         return num;
-    }//calc
+    }//calculate
     
 }//swea1244
