@@ -1,7 +1,7 @@
 # 🎯 3월 2주차(3월 13일~ 3월 19일) 목표
 > **📝 공통문제**  
 > 
-> - **😎 [SWEA 2383. [모의 SW 역량테스트] 점심 식사시간](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl&)** (BFS) 🔥 
+> - **😎 [SWEA 2383. [모의 SW 역량테스트] 점심 식사시간](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl&)** (DP) 🔥 
 > - ### **🌟 Chill Dude 🕶️**  <p float="left"><img src="https://media.tenor.com/1YXq17YXn98AAAAC/chill-dude-chill.gif" width="150" /></p>
 ---
 
