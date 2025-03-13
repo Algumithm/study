@@ -1,7 +1,7 @@
-# 🎯 3월 1주차(3월 6일~ 3월 12일) 목표
+# 🎯 3월 2주차(3월 13일~ 3월 19일) 목표
 > **📝 공통문제**  
 > 
-> - **😎 [백준 14940번 쉬운 최단거리](https://www.acmicpc.net/problem/14940)** (BFS) 🔥 
+> - **😎 [SWEA 2383. [모의 SW 역량테스트] 점심 식사시간](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl&)** (BFS) 🔥 
 > - ### **🌟 Chill Dude 🕶️**  <p float="left"><img src="https://media.tenor.com/1YXq17YXn98AAAAC/chill-dude-chill.gif" width="150" /></p>
 ---
 
