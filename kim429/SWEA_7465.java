@@ -1,8 +1,8 @@
-package swea; 
+package swea;
 
 import java.util.*;
 import java.io.*;
- 
+
 public class SWEA_7465 {
 	static boolean visited[];
 	// ArrayList<Integer> 객체들을 저장하는 배열
@@ -32,6 +32,8 @@ public class SWEA_7465 {
 				int s = Integer.parseInt(st.nextToken());
 				int e = Integer.parseInt(st.nextToken());
 				
+				//A[s]가 null인 상태에서 A[s]를 호출하면 오류가 발생하므로
+				//A[s]를 미리 위에서 초기화 시켜주어야 함
 				A[s].add(e);
 				A[e].add(s);
 			}
