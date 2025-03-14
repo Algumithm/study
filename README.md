@@ -9,17 +9,17 @@
 
 |         **아이디** |                          **목표** |
 | --- | --- |
-| [김수진(kim429)](https://github.com/kim429) | 알고리즘 5문제 이상 풀기 |
+| [김수진(kim429)](https://github.com/kim429) | 5문제이상 풀기 |
 | [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | AtCoder Beginner Contest 기출 문제 중 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/) 기준 Difficulty 400 ~ 800 사이의 2문제 Upsolving 하기 |
-| [오승연(syeony)](https://github.com/syeony) | 이번주는...3문제이상..풀기 |
+| [오승연(syeony)](https://github.com/syeony) | 세문제풀기 |
 | [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버/ SW D3 ~ D5 3문제이상 풀기 |
-| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 5문제 이상 풀기 |
-| [이채영(cycy929)](https://github.com/cycy929) | dfs/bfs문제 3문제 풀기 ( sqld다급..) |
-| [최재필(wovlf)](https://github.com/wovlf) | 1문제라도 풀고싶다.. 1문제풀기 |
-| [동현진(bronzing3412)](https://github.com/bronzing3412) | 실버이상 10문제 풀기 |
-| [박경찬(chomuG)](https://github.com/chomuG) | 골드이상 5문제 이상 풀기! |
-| [송진우(openSongce)](https://github.com/openSongce) | BFS&DFS 5문제 풀기 |
-| [홍은솔(eunsolH)](https://github.com/eunsolH) | Dfs bfs세문제풀기 |
+| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 5문제 이상 풀기 입니다~ |
+| [이채영(cycy929)](https://github.com/cycy929) | 5문제이상 풀기! |
+| [최재필(wovlf)](https://github.com/wovlf) | 골드+실버 합쳐서 5문제풀기 |
+| [동현진(bronzing3412)](https://github.com/bronzing3412) | 골드이상 7문제풀기 |
+| [박경찬(chomuG)](https://github.com/chomuG) | 골드 + 실버 합쳐서 5문제 풀기! |
+| [송진우(openSongce)](https://github.com/openSongce) | 3문제 이상 풀기 |
+| [홍은솔(eunsolH)](https://github.com/eunsolH) | 세문제이상풀기 |
 
 # ✅ 진행 방식
 
