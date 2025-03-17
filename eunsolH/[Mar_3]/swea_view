@@ -1,0 +1,62 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class swea0217 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		for(int i=0;i<10;i++) {
+			int num=Integer.parseInt(br.readLine());
+			
+			
+			StringTokenizer st=new StringTokenizer(br.readLine());
+			
+			int[] arr=new int[num];
+			for(int j=0;j<num;j++) {
+				arr[j]=Integer.parseInt(st.nextToken());
+			}
+			
+			//읽어오기
+			int[] compare=new int[4];
+			compare[0]=0;
+			compare[1]=0;
+			compare[2]=arr[3];
+			compare[3]=arr[4];
+			
+			int index=0;
+			int cnt=0;;
+			for(int j=2;j<num-2;j++) {
+				compare[0]=arr[j-2];
+				compare[1]=arr[j-1];
+				compare[2]=arr[j+1];
+				compare[3]=arr[j+2];
+				if(arr[j]>compare[0] && arr[j]>compare[1] && arr[j]>compare[2] && arr[j]>compare[3]) {
+					int max=Math.max(Math.max(Math.max(compare[0],compare[1]),compare[2]),compare[3]); //find max
+					//System.out.println(max);
+					 cnt=cnt+arr[j]-max;
+					
+					index++;
+				}
+				
+				
+				
+				
+				
+			}
+			
+			
+
+			System.out.println("#"+i+" "+cnt);
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}
