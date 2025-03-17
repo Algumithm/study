@@ -1,0 +1,95 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Algo1{
+	
+	static int[][] arr;
+	static int n,m;
+
+	static int[] sumArr;
+	static int[] selected;
+	static int result;
+	
+	
+	public static void solve(int idx,int start) {
+		if(2==idx) {    //2개의 인덱스가 조합으로 정해지면 절댓값을 구한다.
+			//고른 수 인덱스까지 더하기
+			int sum1=0;
+			int sum2=0;
+			int sum3=0;
+			
+			for(int j=0;j<selected[0];j++) {    //0번쩨 인덱스부터 첫번째 인덱스까지 합을 구한다
+				sum1+=sumArr[j];
+			}
+			for(int j=selected[0];j<selected[1];j++) { //첫번쩨 인덱스부터 두번째 인덱스까지 합을 구한다
+				sum2+=sumArr[j];
+			}
+			for(int j=selected[1];j<m;j++) {//두번쩨 인덱스부터 마지막 인덱스까지 합을 구한다
+				sum3+=sumArr[j];
+			}
+
+			
+			int current=Math.abs(sum1-sum2)+Math.abs(sum2-sum3);    //합의 절댓값의 차이를 구한다.
+			
+			result=Math.min(result,current);   //더 작은 수를 갱신한다
+			
+			
+			return;
+			
+		}else {
+			for(int i=start;i<m;i++) {
+				selected[idx]=i; //조합찾기 숫자고른후 selected[]에 넣는다.
+				solve(idx+1,start+1);
+				
+			}
+			
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		
+		int tc=sc.nextInt();
+		
+		for(int i=1;i<=tc;i++) {
+			
+			
+			n=sc.nextInt();
+			m=sc.nextInt();
+			arr=new int[n][m];
+			sumArr=new int[m];
+			selected=new int[2];
+			
+			for(int j=0;j<n;j++) {
+				for(int k=0;k<m;k++) {
+					arr[j][k]=sc.nextInt();
+					
+				}
+			}
+			result=Integer.MAX_VALUE;
+			//int h=0;
+			for(int j=0;j<m;j++) {
+				for(int h=0;h<n;h++) {
+					sumArr[j]+=arr[h][j];    //열들의 합을 sumArr에 넣는다.
+				}
+
+			}		
+			solve(0,0);
+			
+			System.out.println("#"+i+" "+result);
+			
+			
+			
+		}
+		
+	}
+
+}
