@@ -1,0 +1,62 @@
+import java.util.Scanner;
+ 
+public class Solution{
+ 
+ 
+    static int N;
+    static int[] home,company;
+    static int[][] customers;
+    static int result;
+    static boolean[] visited;
+ 
+    public static void solve(int idx,int x,int y,int current){
+        if(current>result)
+            return;
+        if(idx==N){
+            current=current+Math.abs(x-home[0])+Math.abs(y-home[1]);
+            result=Math.min(result,current);
+            return;
+ 
+        }
+        else{
+            for(int i=0;i<N;i++){
+                if(!visited[i]){
+                    visited[i]=true;
+                    int distance=Math.abs(x-customers[i][0])+Math.abs(y-customers[i][1]);
+                    solve(idx+1,customers[i][0],customers[i][1],current+distance);
+                    visited[i]=false;
+                }
+ 
+ 
+            }
+ 
+        }
+ 
+ 
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+ 
+        int tc=sc.nextInt();
+        for(int i=1;i<=tc;i++){
+            N=sc.nextInt();
+ 
+            company=new int[]{sc.nextInt(),sc.nextInt()};
+            home=new int[]{sc.nextInt(),sc.nextInt()};
+            customers=new int[N][2];
+            visited=new boolean[N];
+            result=Integer.MAX_VALUE;
+ 
+            for(int j=0;j<N;j++){
+                    customers[j][0]=sc.nextInt();
+                    customers[j][1]=sc.nextInt();
+ 
+ 
+            }
+ 
+            solve(0,company[0],company[1],0);
+            System.out.println("#"+i+" "+result);
+ 
+        }
+    }
+}
