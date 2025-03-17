@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class Algo2_구미_4반_홍은솔 {
+	static int arr[][];
+	static int n;
+	static int person;
+	static int result;
+	static boolean[] visited;
+	static int[] ans;
+	
+	
+	public static void solve(int idx) {
+		
+		if(idx==person+1) {
+			int sum=0;
+			for(int j=1;j<person;j++) {
+				int x=ans[j];     //앞에 앉아있는 사람번호를  x값에 준다
+				int y=ans[j+1];   //뒤에 않자있는 사람번호를  y값에 준다
+				sum=sum+arr[x][y];    //합을 구한다
+			}
+			result=Math.min(result,sum);   //작은값갱신
+			return;
+			
+			
+		}else {
+			for(int i=1;i<=person;i++) {
+				if(!visited[i]) {
+					visited[i]=true;     
+					ans[idx]=i;        //순열을 구한후 ans에 값을 넣어준다.
+					solve(idx+1);
+					visited[i]=false;
+				}
+				
+				
+				
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int tc=sc.nextInt();
+		
+		for(int i=1;i<=tc;i++) {
+			
+			person=sc.nextInt();
+			arr=new int[person+1][person+1];
+			visited=new boolean[person+1];
+			ans=new int[person+1];
+			
+			for(int j=1;j<=person;j++) {
+				for(int k=1;k<=person;k++) {
+					arr[j][k]=sc.nextInt();
+				}
+			}
+			result=Integer.MAX_VALUE;
+			
+			solve(1);
+			
+			
+			System.out.println("#"+i+" "+result);
+			
+			
+		}
+		
+		
+	}
+
+}
