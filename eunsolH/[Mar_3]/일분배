@@ -1,0 +1,58 @@
+import java.util.*;
+ 
+public class Solution {
+    static int N;
+    static double[][] arr;
+    static boolean[] visited;
+    static double result;
+ 
+    public static void solve(int idx,double current){
+        if(current<=result)
+            return;
+        if(idx==N){
+            //current=current*100.0;
+            result=Math.max(result,current);
+            return;
+        }
+        else{
+            for(int i=0;i<N;i++){
+                if(!visited[i]){
+                    visited[i]=true;
+                    solve(idx+1,current*arr[idx][i]);
+                    visited[i]=false;
+                }
+            }
+ 
+ 
+ 
+ 
+        }
+ 
+    }
+ 
+ 
+ 
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+ 
+        int tc=sc.nextInt();
+        for(int i=1;i<tc+1;i++){
+            N=sc.nextInt();
+            arr=new double[N][N];
+            for(int k=0;k<N;k++){
+                for(int j=0;j<N;j++){
+                    arr[k][j]= sc.nextInt()/100.0;
+                }
+            }
+            visited=new boolean[N];
+            result=0.0;
+ 
+            solve(0,1.0);
+ 
+            //System.out.println("#"+i+" "+String.format("%.6f",result));
+            System.out.printf("#%d %.6f\n",i,result*100);
+ 
+        }
+ 
+    }
+}
