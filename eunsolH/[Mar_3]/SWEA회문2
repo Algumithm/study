@@ -1,0 +1,123 @@
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class SWEA0317_2 {
+	
+	
+	static char[][] arr;
+	static char[][] transposed;
+	static int resultRow=1;
+	static int resultCol=1;
+	static int result;
+	
+	
+	
+	//funtion check pal
+	public static boolean isPal(int first,int last,int len,char[] a) {
+		
+		
+		for(int k=0;k<len;k++) {
+				if(a[first+k]!=a[last-k]){
+					return false;
+				}
+		}
+		
+		return true;
+		
+		
+	}	
+	
+	
+	//read column
+  //read row
+	public static int readLine() {
+		
+		char[] a=new char[100];
+		char[] b=new char[100];
+		boolean checkRow;
+		boolean checkCol;
+		
+		
+		
+		for(int h=0;h<100;h++) {
+			a=arr[h];
+			b=transposed[h];
+		
+			for(int j=0;j<100;j++) {
+				for(int k=j;k<100;k++) {
+					
+					
+					checkRow=isPal(j, k,(k-j+1)/2,a);
+					checkCol=isPal(j,k,(k-j+1)/2,b);
+					
+					
+					if(checkRow==true) {
+						resultRow=Math.max(resultRow,k-j+1);
+					}
+					if(checkCol==true) {
+						resultCol=Math.max(resultCol,k-j+1);
+						
+					}
+				}
+				
+			}
+		}
+		
+		result=Math.max(resultCol,resultRow);
+		
+		return result;
+		
+		
+	}
+
+	
+	
+	
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		System.setIn(new FileInputStream("src/input.txt"));
+		
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		for(int i=1;i<=10;i++) {
+			
+			int tc=Integer.parseInt(br.readLine());
+			arr=new char[100][100];
+			transposed=new char[100][100];
+			resultCol=1;
+			resultRow=1;
+			
+			int answer=1;
+			
+			int index=0;
+			for(int j=0;j<100;j++) {
+				String line=br.readLine();
+				index=0;
+				for(int k=0;k<100;k++) {
+					arr[j][k]=line.charAt(index++);	
+				}
+			}
+
+
+  
+			
+			//Matrix tranposition
+			for(int j=0;j<100;j++) {
+				for(int k=0;k<100;k++) {
+					transposed[k][j]=arr[j][k];
+				}
+			}
+			
+			answer=readLine();
+			System.out.println("#"+i+" "+answer);
+			
+					
+			
+		}
+		
+	}
+}
