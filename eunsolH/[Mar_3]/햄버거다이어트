@@ -1,0 +1,83 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class SWEA0318 {
+	static int[][] arr;
+	static int num;
+	static int calorie;
+	static int currentTasete;
+	static int result;
+	
+	
+	
+	public static void solve(int idx,int start,int currentSum,int currentTaste) {
+		
+		if(currentSum<=calorie) {
+			result=Math.max(result,currentTaste);		
+
+			
+		}
+		if(currentSum>calorie||start>=num) {
+			return;
+		}
+		//include current ingredient at positon idx
+		solve(idx+1,start+1,currentSum+arr[idx][1],currentTaste+arr[idx][0]);
+		
+		//exclude current ingredient at position idx
+		solve(idx+1,start+1,currentSum,currentTaste);
+
+		
+	}
+	
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		
+		StringTokenizer tc=new StringTokenizer(br.readLine().trim());
+		
+		int testCase=Integer.parseInt(tc.nextToken());
+
+		
+		for(int i=1;i<=testCase;i++) {
+			String line=br.readLine();
+			tc=new StringTokenizer(line);
+			
+			
+			num=Integer.parseInt(tc.nextToken());
+			calorie=Integer.parseInt(tc.nextToken());
+			
+			arr=new int[num][2];
+			
+
+			for(int j=0;j<num;j++) {
+				tc=new StringTokenizer(br.readLine());
+				arr[j][0]=Integer.parseInt(tc.nextToken());
+				arr[j][1]=Integer.parseInt(tc.nextToken());
+			}
+			
+			
+			
+			
+			result=0;
+			
+			solve(0,0,0,0);
+			
+			
+			
+			System.out.println("#"+i+" "+result);
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+}
