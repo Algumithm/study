@@ -3,7 +3,7 @@ package swea;
 import java.util.*;
 import java.io.*;
 
-public class BOJ_15649_2 {
+public class BOJ_15649_2 { 
 	static int N;
 	static int M;
 	static boolean[] visited;
