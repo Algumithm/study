@@ -20,19 +20,39 @@ public class Main {
 		map = new int[row+1][col+1];
 		visit = new boolean[row+1][col+1];
 		dis = new int[row+1][col+1];
+		
+		int goal_x = -1;
+		int goal_y = -1;
+		
 		for(int i = 1; i <= row; i++) {
-			String s = br.readLine();
+			st = new StringTokenizer(br.readLine());
 			for(int j = 1; j <= col; j++) {
-				map[i][j] = s.charAt(j-1) - '0';
+				map[i][j] = Integer.parseInt(st.nextToken());
+				if(map[i][j] == 2) {
+					goal_x = i;
+					goal_y = j;
+				}
 			}
 		}
-		bfs(1,1);
-		bw.write(dis[row][col] + "\n");
+		
+		bfs(goal_x,goal_y);
+		for(int i = 1; i <= row; i++) {
+			for(int j = 1; j <= col; j++) {
+				if(map[i][j] >= 1 && !visit[i][j]) dis[i][j] = -1;
+			}
+		}
+		
+		for(int i = 1; i <= row; i++) {
+			for(int j = 1; j <= col; j++) {
+				bw.write(dis[i][j] + " ");
+			}
+			bw.write("\n");
+		}
 		bw.flush();
 	}
 	
 	static void bfs(int x, int y) {
-		dis[x][y] = 1;
+		dis[x][y] = 0;
 		q.add(new int[] {x, y});
 		visit[x][y] = true;
 		while(!q.isEmpty()) {
