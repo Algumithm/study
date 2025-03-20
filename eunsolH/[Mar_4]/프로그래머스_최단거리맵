@@ -1,0 +1,42 @@
+import java.awt.Point;
+import java.util.*;
+class Solution {
+    public int solution(int[][] maps) {
+        int dx[]={0,0,-1,1};
+        int dy[]={-1,1,0,0};
+        int n=maps.length;
+        int m=maps[0].length;
+        int answer = 0;
+        
+        boolean visited[][]=new boolean[n][m];
+        
+        
+        Queue<Point> que=new ArrayDeque<>();
+        que.offer(new Point(0,0)); //처음 방문지 큐에 넣기
+        visited[0][0]=true;
+        
+        while(!que.isEmpty()){
+            Point p=que.poll();
+            for(int i=0;i<4;i++){
+                int nx=p.x+dx[i];
+                int ny=p.y+dy[i];
+                if(0<=nx&& nx<n && ny>=0 &&ny<m&& !visited[nx][ny] &&maps[nx][ny]==1){
+                    que.offer(new Point(nx,ny));
+                    visited[nx][ny]=true;
+                    maps[nx][ny]=maps[p.x][p.y]+1;
+                    
+                }
+
+            }
+
+        }
+        if(maps[n-1][m-1]==1){
+            answer=-1;
+        }
+        else{
+            answer=maps[n-1][m-1];
+        
+        }
+        return answer;
+    }
+}
