@@ -1,7 +1,7 @@
 # 🎯 3월 3주차(3월 20일~ 3월 26일) 목표
 > **📝 공통문제**  
-> - **😎(필수) [백준 9251. LCS](https://www.acmicpc.net/problem/9251)** (DP) 🔥
-> - **😎(선택) [백준 9252. LCS 2](https://www.acmicpc.net/problem/9252)** (DP) 🔥
+> - **😎(필수)<a href="https://www.acmicpc.net/problem/9251" target="_blank"> 백준 9251. LCS**</a> (DP) 🔥
+> - **😎(선택)<a href="https://www.acmicpc.net/problem/9252" target="_blank"> 백준 9251. LCS 2**</a> (DP) 🔥
 >
 > **📝 3반 강사님 A형 추천 문제** 
 > - **😎 [SWEA 2383. [모의 SW 역량테스트] 점심 식사시간](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl&)** (DP) 🔥 
