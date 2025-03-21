@@ -1,6 +1,7 @@
-# 🎯 3월 2주차(3월 13일~ 3월 19일) 목표
+# 🎯 3월 3주차(3월 20일~ 3월 26일) 목표
 > **📝 공통문제**  
-> - **😎 [백준 10971. 외판원 순회 2](https://www.acmicpc.net/problem/10971)** (백트래킹) 🔥
+> - **😎(필수) [백준 9251. LCS](https://www.acmicpc.net/problem/9251)** (DP) 🔥
+> - **😎(선택) [백준 9252. LCS 2](https://www.acmicpc.net/problem/9252)** (DP) 🔥
 >
 > **📝 3반 강사님 A형 추천 문제** 
 > - **😎 [SWEA 2383. [모의 SW 역량테스트] 점심 식사시간](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl&)** (DP) 🔥 
@@ -9,17 +10,17 @@
 
 |         **아이디** |                          **목표** |
 | --- | --- |
-| [김수진(kim429)](https://github.com/kim429) | 5문제이상 풀기 |
-| [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | AtCoder Beginner Contest 기출 문제 중 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/) 기준 Difficulty 400 ~ 800 사이의 2문제 Upsolving 하기 |
-| [오승연(syeony)](https://github.com/syeony) | 세문제풀기 |
-| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 브론즈 ~ 실버/ SW D3 ~ D5 3문제이상 풀기 |
-| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 5문제 이상 풀기 입니다~ |
-| [이채영(cycy929)](https://github.com/cycy929) | 5문제이상 풀기! |
+| [김수진(kim429)](https://github.com/kim429) | 10문제이상 풀기 |
+| [김동찬(LoxaLovecarstone)](https://github.com/LoxaLovecarstone) | 이번 주 ABC에서 승급하기! 진짜 이제 그린만 달성하고 잠깐 내려놓고 싶습니다 |
+| [오승연(syeony)](https://github.com/syeony) | 3문제 이상 풀기 |
+| [김민(ZeppIine)](https://github.com/ZeppIine) | 백준 실버 ~ 골드 / SW D3 ~ D5 3문제이상 풀기 |
+| [박승균(seungyun-Park)](https://github.com/seungyun-Park) | 5문제 이상 풀기 |
+| [이채영(cycy929)](https://github.com/cycy929) | 5문제 이상 풀기 |
 | [최재필(wovlf)](https://github.com/wovlf) | 골드+실버 합쳐서 5문제풀기 |
 | [동현진(bronzing3412)](https://github.com/bronzing3412) | 골드이상 7문제풀기 |
 | [박경찬(chomuG)](https://github.com/chomuG) | 골드 + 실버 합쳐서 5문제 풀기! |
 | [송진우(openSongce)](https://github.com/openSongce) | 3문제 이상 풀기 |
-| [홍은솔(eunsolH)](https://github.com/eunsolH) | 세문제이상풀기 |
+| [홍은솔(eunsolH)](https://github.com/eunsolH) | 3문제 이상풀기 |
 
 # ✅ 진행 방식
 
