@@ -1,5 +1,3 @@
-package _0407;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,7 +22,7 @@ class Ward{
 	}
 }
 
-public class bj17471 {
+public class Main {
 	static int N, min;
 	static boolean visited[];
 	static List<Ward> ward = new ArrayList<>();
@@ -48,10 +46,6 @@ public class bj17471 {
 			}
 		}
 		
-//		for (int i = 0; i < ward.size(); i++) {
-//			System.out.println(ward.get(i));
-//		}
-		
 		for (int i = 0; i < N; i++) {
 			visited[i] = true;
 			dfs(i, 1);
@@ -59,64 +53,29 @@ public class bj17471 {
 		}
 		
 		
-		if(min == Integer.MAX_VALUE) {
+		if(min == Integer.MAX_VALUE) { //선거구를 나눌 수 없는 경우
 			min = -1;
 		}
 		
 		System.out.println(min);
-		
-		
 	}//main
 	
 	static void dfs(int idx, int cnt) {
+	//dfs돌때마다 나머지방문하지 않은 곳과 방문한 곳가 모두 연결되어있는지 확인하고 연결되어있다면 diff 계산
 		if(cnt == N)
 			return;
-//		for (int i = 0; i < visited.length; i++) {
-//			System.out.print(visited[i] + " ");
-//		}
-//		System.out.println();
-		
-		
-//		System.out.println("dfs" + " " + idx + ", next : " + next);
-		
-		//돌때마다 나머지(방문하지 않은 곳)가 모두 연결되어있는지 확인하고 연결되어있다면 diff 계산
-		//혼자일떄도 확인 필요
 		List<Integer> tmp = new ArrayList<Integer>();
 		for (int i = 0; i < visited.length; i++) {
 			if(!visited[i])
 				tmp.add(i);
 		}//방문하지 않은 곳 전부 넣기
-		for (int i = 0; i < tmp.size(); i++) {
-			System.out.print(tmp.get(i) + " ");
-		}
-		System.out.println();
-		if(checkConnection(tmp)){
-			
-			for (int i = 0; i < visited.length; i++) {
-				System.out.print(visited[i] + " ");
-			}
-			System.out.println();
-			
-//			System.out.println(calcDiff());
-			min = Math.min(min, calcDiff());
-			//diff 계산
-//			for (int i = 0; i < visited.length; i++) {
-//				System.out.print(visited[i] + " ");
-//			}
-//			System.out.println();
+		
+		if(checkInvistedConnection(tmp) && checkVisitedConnection()){
+			//방문한 것들과 방문하지 않은 것들이 모두 이어져 있다면
+			min = Math.min(min, calcDiff());//diff 계산
 		}
 		
-//		int next = -1;
-//		for (int i = 0; i < ward.get(idx).adjacent.size(); i++) {
-//			if (!visited[ward.get(idx).adjacent.get(i)]) {
-//				next = ward.get(idx).adjacent.get(i);
-//				visited[next] = true;
-//				dfs(next);
-//				visited[next] = false;
-//			}
-//		}
-		
-		for (int i = 0; i < N; i++) {
+		for (int i = idx; i < N; i++) {
 			if(!visited[i]) {
 				visited[i] = true;
 				dfs(i, cnt + 1);
@@ -127,37 +86,29 @@ public class bj17471 {
 		
 	}//main
 	
-	static boolean checkConnection(List<Integer> list) {
+	static boolean checkInvistedConnection(List<Integer> list) { //방문 안한것들 연결 확인
 		if(list.size() == 0 || list.size() == N)
 			return false;
-//		for (int i = 0; i < list.size(); i++) {
-//			System.out.print(list.get(i) + " ");
-//		}
-//		System.out.println();
 			
 		visited[list.get(0)] = true;
 		Queue<Integer> q = new LinkedList<Integer>();
-		for (int i = 0; i < ward.get(list.get(0)).adjacent.size(); i++) {
-			if(!visited[ward.get(list.get(0)).adjacent.get(i)]) {
-				q.add(ward.get(list.get(0)).adjacent.get(i));
-				visited[ward.get(list.get(0)).adjacent.get(i)] = true;
+		for (int i: ward.get(list.get(0)).adjacent) {
+			if(!visited[i]) {
+				q.add(i);
+				visited[i] = true;
 			}
 		}
 		
 		while(!q.isEmpty()) {
 			int tmp = q.poll();
 			
-			for (int i = 0; i < ward.get(tmp).adjacent.size(); i++) {
-				if(!visited[ward.get(tmp).adjacent.get(i)]) {
-					q.add(ward.get(tmp).adjacent.get(i));
-					visited[ward.get(tmp).adjacent.get(i)] = true;
+			for (int i : ward.get(tmp).adjacent) {
+				if(!visited[i]) {
+					q.add(i);
+					visited[i] = true;
 				}
 			}
 		}
-//		for (int i = 0; i < visited.length; i++) {
-//			System.out.print(visited[i] + " ");
-//		}
-//		System.out.println();
 		for (int i = 0; i < visited.length; i++) {
 			if(!visited[i]) {
 				for (int j = 0; j < list.size(); j++) {
@@ -168,16 +119,50 @@ public class bj17471 {
 			}
 		}
 		
-//		System.out.println();
 		for (int j = 0; j < list.size(); j++) {
 			visited[list.get(j)] = false;
 		}//초기화
 		
-//		for (int i = 0; i < visited.length; i++) {
-//			System.out.print(visited[i] + " ");
-//		}
 		return true;
 	}//checkConnection
+	
+	static boolean checkVisitedConnection() { //방문한것들 연결 확인
+	    boolean[] tempVisited = new boolean[N];
+	    
+	    int start = -1;
+	    for (int i = 0; i < N; i++) {
+	        if (visited[i]) {
+	            start = i;
+	            break;
+	        }
+	    }
+	    
+	    if (start == -1)
+	    	return false;
+	     
+	    Queue<Integer> q = new LinkedList<>();
+	    q.add(start);
+	    tempVisited[start] = true;
+
+	    while (!q.isEmpty()) {
+	        int tmp = q.poll();
+	        for (int i : ward.get(tmp).adjacent) {
+	            if (visited[i] && !tempVisited[i]) {
+	                tempVisited[i] = true;
+	                q.add(i);
+	            }
+	        }
+	    }
+
+	    for (int i = 0; i < N; i++) {
+	    	//방문한 것 중에 이어져 있지 않은 노드가 있으면
+	        if (visited[i] && !tempVisited[i]) 
+	        	return false;
+	    }
+
+	    return true;
+	}
+
 	
 	static int calcDiff() {
 		int visitedCount = 0;
