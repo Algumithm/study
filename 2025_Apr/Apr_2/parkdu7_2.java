@@ -31,10 +31,10 @@ public class Main {
 			for (int k = 2; k < n + 2; k++) {
 				for (int j = 0; j < 2; j++) {
 					int cur = list.get(j)[k - 2];
-					if (j == 0) {//위에꺼
+					if (j == 0) {//윗줄인경우, (아래 대각선 + 자기자신)과 그 (아래 대각선의 왼쪽 값 + 자기자신) 을 비교
 						dp[j][k] = Math.max(dp[1][k - 1] + cur, dp[1][k - 2] + cur);
 					}
-					else { //아래꺼
+					else { //아랫줄인경우, (윗 대각선 + 자기자신)과 그 (윗 대각선의 왼쪽 값 + 자기자신) 을 비교
 						dp[j][k] = Math.max(dp[0][k - 1] + cur, dp[0][k - 2] + cur);
 					}
 				}
