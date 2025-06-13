@@ -69,11 +69,7 @@ class Solution {
                 if (rnx == bnx && rny == bny) continue;
                 if (rnx == bx && rny == by && bnx == rx && bny == ry) continue;
 
-                rVisited[rnx][rny] = true;
-                bVisited[bnx][bny] = true;
                 dfs(cnt + 1, rnx, rny, bnx, bny);
-                rVisited[rnx][rny] = false;
-                bVisited[bnx][bny] = false;
             }
         }
         
