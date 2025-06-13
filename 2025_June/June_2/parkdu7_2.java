@@ -15,7 +15,7 @@ class Solution {
             }
         }
         
-        // 각 진법이 모든 수식을 만족하는지 확인 (known + unknown 모두 검사)
+        // 각 진법이 수식을 만족하는지 확인
         Set<Integer> possibleBases = new HashSet<>();
         for (int base = 2; base <= 9; base++) {
             boolean valid = true;
@@ -27,16 +27,11 @@ class Solution {
                     valid = false;
                     break;
                 }
-                try {
-                    int a = Integer.parseInt(A, base);
-                    int b = Integer.parseInt(B, base);
-                    int c = Integer.parseInt(C, base);
-                    int res = op.equals("+") ? a + b : a - b;
-                    if (res != c) {
-                        valid = false;
-                        break;
-                    }
-                } catch (Exception e) {
+                int a = Integer.parseInt(A, base);
+                int b = Integer.parseInt(B, base);
+                int c = Integer.parseInt(C, base);
+                int res = op.equals("+") ? a + b : a - b;
+                if (res != c) {
                     valid = false;
                     break;
                 }
@@ -65,16 +60,12 @@ class Solution {
             Set<String> results = new HashSet<>();
             
             for (int base : possibleBases) {
-                try {
-                    int a = Integer.parseInt(A, base);
-                    int b = Integer.parseInt(B, base);
-                    int c = op.equals("+") ? a + b : a - b;
-                    if (c < 0) continue;
-                    String cStr = Integer.toString(c, base);
-                    results.add(cStr);
-                } catch (Exception e) {
-                    // 무시
-                }
+                int a = Integer.parseInt(A, base);
+                int b = Integer.parseInt(B, base);
+                int c = op.equals("+") ? a + b : a - b;
+                if (c < 0) continue;
+                String cStr = Integer.toString(c, base);
+                results.add(cStr);
             }
             
             if (results.size() == 1) {
